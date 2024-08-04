@@ -78,3 +78,26 @@ print(word[2::4])   # odd
 #--------------------------------------------------------------
 
 # Negative Slicing (reverse reading of any iterable data)
+
+# s = "Royal Technosoft Pvt. Ltd."
+# print(s[-1:])
+# print(s[:-1])
+
+# s = "Hello, World!"
+# print(s[len(s)-3:])
+# print(s[-3:])
+# print(s[-10:-3])
+# print(s[::-1])  # if step is -1 then it will reverse the string
+# print(s[-10:-13:-1])
+# print(s[-4:-1:1])
+# print(s[-1:-4:-1])
+# print(s[:0:-1])
+# print(s[1:-5:1])
+
+""" # smol praktis
+my_string = "The quick brown fox jumps over the lazy dog"
+> reverse a substring from index -10 to -30 with a step of -1
+> Extract "dog lazy the over" form the reversed string
+> Extract every second character in reverse from the original string
+
+"""
