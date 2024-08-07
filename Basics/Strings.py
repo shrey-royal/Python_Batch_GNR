@@ -101,3 +101,16 @@ my_string = "The quick brown fox jumps over the lazy dog"
 > Extract every second character in reverse from the original string
 
 """
+my_string = "The quick brown fox jumps over the lazy dog"
+
+# 1
+# print(my_string[-10:-30:-1])
+# print(my_string[-29:-9][::-1])
+
+# 2
+# var = my_string[-1:-4:-1][::-1] + " " + my_string[-5:-9:-1][::-1] + " " + my_string[-10:-13:-1][::-1] + " " + my_string[-14:-18:-1][::-1]
+
+# print(var)
+
+# 3
+# print(my_string[-2::-2])
