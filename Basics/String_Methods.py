@@ -11,7 +11,7 @@
 # print("Hello\tWorld".expandtabs(10))
 
 # print("hello world".find('o', 0, 3))
-# print("python programming".find('prog'))  # returns -1
+# print("python programming".find('Prog'))  # returns -1
 
 # text = "Good {}!"
 # print(text.format("Evening"))
@@ -19,3 +19,18 @@
 # print("{2}, {0}, {3} and {1} are learing python with me.".format("Archi", "Herry", "Dhruv", "Yug"))
 
 # print("hello world".index('_'))     # returns ValueError
+# print("HELLO124".isupper())
+# print("hello124".islower())
+# print("hellO".isalpha())
+# print("hello123".isalnum())
+# print("D#ruv".isascii())
+# print("2²".isdigit())
+# print("2²".isdecimal())
+# print("234".isnumeric())
+# print("_var".isidentifier())
+# print("cafē\n".isprintable())
+# print("     ".isspace())
+# print("   Hello World".istitle())
+# print(" ".join('ABC'))
+# print("'", "hello".ljust(10, '-'), "'", sep="")
+# print("-*-*-*-*-*-|*-*-*-*-*-*-*-hello".lstrip('*-'))
