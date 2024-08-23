@@ -34,3 +34,37 @@
 # print(" ".join('ABC'))
 # print("'", "hello".ljust(10, '-'), "'", sep="")
 # print("-*-*-*-*-*-|*-*-*-*-*-*-*-hello".lstrip('*-'))
+
+# string = "royal technosoft pvt. ltd."
+# table = str.maketrans("ot", "0😊")
+# print(table)
+# print(string.translate(table))
+
+# print("royal technosoft".partition("tech"))
+# print("royal technosoft".partition(" "))
+# print("royal technosoft".partition("o"))
+# print("royal technosoft".partition(""))     # ValueError: empty separator
+# print("royal technosoft".partition("@"))
+# print("royal technosoft".partition("ft"))
+
+# print("royal technosoft".replace("tech", "TECH"))
+# print("royal technosoft".replace("tech", ""))
+
+# print("'", "royal technosoft  m      ".rstrip(" "), "'", sep='')
+# print("royal technosoft".removeprefix("ro"))
+# print("royal technosoft".removesuffix("nosoft"))
+# print("royal technosoft".rfind("o"))
+# print("royal technosoft".rindex("e"))
+# print("'", "royal technosoft".rjust(50), "'", sep="")
+# print("royal technosoft".rsplit("o"))
+# print("royal technosoft".rpartition("o"))
+
+# print("royal technosoft".startswith("roy"))
+# print("royal Technosoft".split("o"))
+# print("Lorem ipsum \ndolor sit amet consectetur \n\nadipisicing elit. Error iusto, quam culpa odit non, quae, facilis perspiciatis praesentium optio possimus nisi totam? ".splitlines())
+# print("^^^^^^^^^^^^^^-^^---$-----^^----^-0----&--------Kaushal Patel-^^---$-----^^----^-0----&--------^^^^^^^^^^^^".strip("-^$"))
+# print("KauShAl Patel".swapcase())
+
+# print("kAUSHAL patel".title())
+# print("kaushal Patel".upper())
+print("11001".zfill(8))
