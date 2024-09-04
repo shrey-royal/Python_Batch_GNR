@@ -1,25 +1,31 @@
 # Match Case (Switch Case)
 
-a = int(input("Enter a: "))
-b = int(input("Enter b: "))
+while True:
+    print("\n\n1. Addition")
+    print("2. Subtraction")
+    print("3. Multiplication")
+    print("4. Division")
+    print("0. Exit")
+    choice = int(input("Enter your choice: "))
 
-print("1. Addition")
-print("2. Subtraction")
-print("3. Multiplication")
-print("4. Division")
-choice = int(input("Enter your choice: "))
+    if choice == 0:
+        print("Exiting...")
+        exit(0)
 
-match choice:
-    case 1:
-        print(f"Addition of {a} and {b} is {a+b}")
-    case 2:
-        print(f"Subtraction of {a} and {b} is {a-b}")
-    case 3:
-        print(f"Multiplication of {a} and {b} is {a*b}")
-    case 4:
-        print(f"Division of {a} and {b} is {a/b}")
-    case _:
-        print("Invalid choice")
+    a = int(input("Enter a: "))
+    b = int(input("Enter b: "))
+
+    match choice:
+        case 1:
+            print(f"Addition of {a} and {b} is {a+b}")
+        case 2:
+            print(f"Subtraction of {a} and {b} is {a-b}")
+        case 3:
+            print(f"Multiplication of {a} and {b} is {a*b}")
+        case 4:
+            print(f"Division of {a} and {b} is {a/b}")
+        case _:
+            print("Invalid choice")
 
 """
 Problem Statement:
