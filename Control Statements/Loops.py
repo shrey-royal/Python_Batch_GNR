@@ -13,7 +13,7 @@ syntax:
 
 '''
 
-# range(start (0), stop (n-1), step) function
+# range(start=0 (optional), stop (n-1), step=1 (optional)) function
 
 # for i in range(1, 10):
 #     print(i, end=', ')
