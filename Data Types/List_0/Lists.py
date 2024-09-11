@@ -50,7 +50,7 @@ indian_veggies = [
     "Spinach (Palak)",
     "Fenugreek Seeds Sprouts (Methi Dana)",
     "Cluster Beans (Gawar Phali)",
-    "French Beans",
+    "French Beans (Hari Faliya)",
     "Yardlong Beans (Bora)",
     "Broad Beans (Sem)",
     "Green Peas (Matar)",
@@ -74,6 +74,30 @@ indian_veggies = [
 ]
 
 # 1. Get all the veggies with c as a starting letter
+# for veggie in indian_veggies:
+#     if veggie.lower().startswith('c'):
+#         print(veggie)
+
 # 2. Take english input from the user and get the veggie in hindi
+# user_input = input("Enter the name of the vegetable in English: ").strip().lower()
+
+# for veggie in indian_veggies:
+#     vlist = veggie.split(' (')
+#     if user_input == vlist[0].lower():
+#         print(vlist[1].replace(')', ''))
+
 # 3. Find all veggies with more than 2 words
+# for veggie in indian_veggies:
+#     if len(veggie.split()) > 2:
+#         print(veggie)
+
 # 4. Find all veggies with only 1 word
+# for veggie in indian_veggies:
+#     if len(veggie.split()) == 2:
+#         print(veggie)
+
+# 5. Find all veggies that contain the word "Gourd"
+# 6. List all veggies with their names starting with a vowel
+# 7. Count the number of veggies that have Hindi names containing exactly 2 words
+# 8. Find all veggies whose English names have exactly 2 words.
+# 9. Find all veggies whose Hindi names end with "Patta" (Leaf)
