@@ -9,6 +9,8 @@ Duplicates Allowed? -> True
 
 """
 
+from pprint import pprint
+
 #declaration of list
 # list_var = list() # using constructors
 # list_var = []
@@ -101,3 +103,68 @@ indian_veggies = [
 # 7. Count the number of veggies that have Hindi names containing exactly 2 words
 # 8. Find all veggies whose English names have exactly 2 words.
 # 9. Find all veggies whose Hindi names end with "Patta" (Leaf)
+
+
+# List Methods
+########################################################
+
+# indian_veggies.append("Bell Pepper (Capsicum)")
+# print(indian_veggies)
+########################################################
+
+# print(indian_veggies.count("Spinach (Palak)"))
+
+# count = 0
+# for i in indian_veggies:
+#     if 'spinach (palak)'.casefold() == i.casefold():
+#         count += 1
+
+# print(count)
+########################################################
+
+# indian_veggies.clear()
+# print(indian_veggies)
+########################################################
+
+# veggies = indian_veggies  # this will add a new label to an existing variables
+# veggies = indian_veggies.copy()
+# print(id(veggies), id(indian_veggies))
+########################################################
+
+# new_list = ["Bell Pepper (Capsicum)", "Khaman (!veggie)", ["abcd", "xyz"]]
+# indian_veggies.extend(new_list)
+# print(indian_veggies)
+########################################################
+
+# print(len(indian_veggies), end='\n\n')
+# indian_veggies.insert(1, "Bell Pepper (Capsicum)")
+
+# print(indian_veggies)
+
+# print(indian_veggies.index("Turnip (Shalgam)"))
+########################################################
+
+# print(indian_veggies.pop(37), indian_veggies, sep="\n")
+########################################################
+
+# indian_veggies.reverse()
+# print(indian_veggies)
+
+# print(indian_veggies, end="\n\n\n\n")
+# indian_veggies.remove("Raw Mango (Keri)")
+# print(indian_veggies)
+########################################################
+
+# indian_veggies.sort()   # ascending
+indian_veggies.sort(reverse=True)   # descending
+pprint(indian_veggies)
+
+
+# lst = [1, [2, 3], 4, [5, 6], 7, [8, 9]]
+
+# for elem in lst:
+#     if isinstance(elem, list):
+#         for j in range(len(elem)):
+#             print(elem[j])
+#     else:
+#         print(elem)
