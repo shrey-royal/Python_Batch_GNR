@@ -26,8 +26,8 @@ tupList = [('l', 5), ('k', 2), ('a', 1), ('e', 6)], sortList = ['l', 'a', 'k', '
 Output:
 [('l', 5), ('a', 1), ('k', 2), ('e', 6)]
 """
-tupList = [('l', 5), ('k', 2), ('a', 1), ('e', 6)]
-sortList = ['l', 'a', 'k', 'e']
+# tupList = [('l', 5), ('k', 2), ('a', 1), ('e', 6)]
+# sortList = ['l', 'a', 'k', 'e']
 
 # output: list = list()
 # for k in sortList:
@@ -36,8 +36,8 @@ sortList = ['l', 'a', 'k', 'e']
 #         if k == t[0]:
 #             output.append(t)
 
-output = [t for k in sortList for t in tupList if k == t[0]]
-print(output)
+# output = [t for k in sortList for t in tupList if k == t[0]]
+# print(output)
 
 """
 Example 2:
@@ -49,4 +49,19 @@ Output:
 (binary of 1, binary of 2, binary of 3, binary of 4, binary of 5)
 """
 # using loops -> ?
-print(bin(8)[2:].zfill(8))
+# print(bin(8)[2:].zfill(8))
+tuple1 = (1234, 331, 437, 59, 63)
+l = []
+
+for i in tuple1:
+    binary = ''
+    while i > 0:
+        binary = str(i % 2) + binary
+        i = i // 2
+
+    while len(binary) < 8:
+        binary = '0' + binary
+
+    l.append(binary)
+
+print(tuple(l))
