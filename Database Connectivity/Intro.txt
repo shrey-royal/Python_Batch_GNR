@@ -1,0 +1,73 @@
+Database Connectivity: It is the process of connecting to a database management system (DBMS) using Python code to perform operations like reading, writing, updating, and deleting data.
+
+Q. How python and SQL will communicate with each other?
+A) For this we will need a connector which will convert python code into SQL statements and vice versa.
+
+Steps to connect to a database:
+-> Connect with the MySQL Server
+-> Create a connection with the existing database or create a new database
+-> Create the SQL query to execute
+-> Execute the Query (return the data if the query returns anything)
+-> Close the connection
+
+Database Options:
+1. Oracle
+2. MySQL (recommended)
+3. PostgreSQL
+4. MongoDB (Schema-less DB)
+
+CRUD Operations performed on Database:
+1. Create/Insert Data
+2. Retrieve/Get Data (all/specific row)
+3. Update/Modify Data
+4. Delete/Remove Data
+
+
+To connect with the mysql server from out Termial/CMD:
+
+-> mysql -u root -p (enter the password "root")
+
+-- use the below step if you haven't created a database yet! otherwise skip this step
+-> CREATE DATABASE db_name; (change the db_name with the actual database name)
+
+-> USE db_name; (change the db_name with the actual database name)
+
+
+Now for the connector, we have python package installer (pip). to install the connector we have to type in a command in cmd.
+
+pip install mysql-connector-python
+
+DB Queries:
+
+Create Table Query ->
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100),
+    email VARCHAR(100),
+    age INT,
+    country VARCHAR(50)
+);
+
+Dummy Data to insert:
+INSERT INTO users (name, email, age, country)
+VALUES
+('Alice Smith', 'alice.smith@example.com', 25, 'USA'),
+('Bob Johnson', 'bob.johnson@example.com', 30, 'UK'),
+('Carol Williams', 'carol.williams@example.com', 22, 'Canada'),
+('David Brown', 'david.brown@example.com', 35, 'Australia'),
+('Emily Davis', 'emily.davis@example.com', 28, 'USA'),
+('Frank Wilson', 'frank.wilson@example.com', 33, 'Germany'),
+('Grace Lee', 'grace.lee@example.com', 26, 'South Korea'),
+('Henry Kim', 'henry.kim@example.com', 29, 'South Korea'),
+('Irene Thompson', 'irene.thompson@example.com', 27, 'Canada'),
+('Jack Garcia', 'jack.garcia@example.com', 31, 'Mexico'),
+('Karen Martinez', 'karen.martinez@example.com', 24, 'Argentina'),
+('Leo Robinson', 'leo.robinson@example.com', 34, 'France'),
+('Maria Clark', 'maria.clark@example.com', 36, 'Spain'),
+('Nick Lewis', 'nick.lewis@example.com', 32, 'UK'),
+('Olivia Walker', 'olivia.walker@example.com', 23, 'Australia'),
+('Paul Hall', 'paul.hall@example.com', 37, 'Germany'),
+('Quincy Allen', 'quincy.allen@example.com', 40, 'USA'),
+('Rachel Young', 'rachel.young@example.com', 21, 'USA'),
+('Steve Hernandez', 'steve.hernandez@example.com', 28, 'Mexico'),
+('Tina Scott', 'tina.scott@example.com', 22, 'Canada');
